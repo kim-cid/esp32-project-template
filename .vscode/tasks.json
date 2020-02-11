@@ -1,0 +1,65 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "Build",
+            "group": "build",
+            "type": "shell",
+            "command": "idf.py build",
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Clean",
+            "group": "build",
+            "type": "shell",
+            "command": "idf.py clean",
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Flash",
+            "group": "build",
+            "type": "shell",
+            "command": "idf.py flash",
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Monitor",
+            "group": "build",
+            "type": "shell",
+            "command": "idf.py monitor",
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "Menuconfig",
+            "group": "build",
+            "type": "shell",
+            "command": "idf.py menuconfig",
+            "presentation": {
+                "reveal": "always",
+            },
+            "problemMatcher": []
+        },
+        {
+            "label": "OpenOCD",
+            "type": "shell",
+            "isBackground": true,
+            "options":
+            {
+                "cwd": "${workspaceFolder}"
+            },
+            "command": "openocd -f interface/jlink.cfg -f board/esp-wroom-32.cfg"
+        },
+    ]
+}

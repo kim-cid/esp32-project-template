@@ -1,0 +1,9 @@
+{
+    "recommendations": [
+        "ms-vscode.cpptools",
+        "EditorConfig.EditorConfig",
+        "webfreak.debug",
+    ],
+
+    "unwantedRecommendations": [],
+}

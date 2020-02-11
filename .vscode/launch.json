@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Native Debug (Flash + Debug)",
+            "type": "gdb",
+            "request": "launch",
+            "cwd": "${workspaceFolder}",
+            "gdbpath": "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gdb",
+            "target": "./build/esp32-project-template.elf",
+            "autorun":
+            [
+                "target remote :3333",
+                "mon reset halt",
+                "mon program_esp32 ./build/esp32-project-template.bin 0x10000 verify",
+                "mon reset halt",
+                "flushregs",
+                "thb app_main",
+                "c"
+            ],
+            "preLaunchTask": "OpenOCD"
+        }
+    ]
+}

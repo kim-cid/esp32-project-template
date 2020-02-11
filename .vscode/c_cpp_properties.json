@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "name": "ESP-IDF Environment",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "${env:ESP_IDF_PATH}/components/**"
+            ],
+            "defines": [],
+            "compilerPath": "${env:IDF_TOOLS_PATH}/tools/xtensa-esp32-elf/1.22.0-80-g6c4433a5-5.2.0/xtensa-esp32-elf/bin/xtensa-esp32-elf-gcc.exe",
+            "cStandard": "c99",
+            "cppStandard": "c++14",
+            "intelliSenseMode": "${default}"
+        }
+    ],
+    "version": 4
+}
